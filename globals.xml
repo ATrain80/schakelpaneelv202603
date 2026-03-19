@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lvgl_globals version="1.0">
+    <!-- Globale instellingen -->
+    <settings>
+        <resolution width="1024" height="600"/>
+        <color_depth>16</color_depth>
+        <theme>default</theme>
+    </settings>
+
+    <!-- Callback mappings (optioneel, hier placeholder) -->
+    <callbacks>
+        <callback name="wissel_event_cb" type="function"/>
+        <callback name="tt_event_cb" type="function"/>
+        <callback name="tt_center_event_cb" type="function"/>
+    </callbacks>
+
+    <!-- Fonts / resources (optioneel) -->
+    <resources>
+        <!-- Viewer gebruikt standaard fonts, geen extra nodig -->
+    </resources>
+
+    <!-- Globale widgets / screens (optioneel) -->
+    <screens>
+        <screen name="main_screen"/>
+    </screens>
+</lvgl_globals>
