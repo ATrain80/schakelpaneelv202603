@@ -1,7 +1,36 @@
-<project name="examples">
-	<targets>
-		<target name="full_view">
-			<display width="480" height="480" />
-		</target>
-	</targets>
-</project>
+<?xml version="1.0" encoding="UTF-8"?>
+<lvgl_project version="1.0">
+    <resolution width="1024" height="600"/>
+    <files>
+        <file name="main.c" type="c"/>
+        <file name="lv_conf.h" type="h"/>
+    </files>
+    <widgets>
+        <!-- Sporenplan placeholder -->
+        <container name="sporenplan" x="0" y="0" width="716" height="420" flex="row">
+            <label text="SPORENPLAN (placeholder)" x="0" y="0"/>
+        </container>
+
+        <!-- Draaischijf -->
+        <container name="draaischijf" x="716" y="0" width="308" height="420">
+            <button name="tt_1" x="150" y="50" width="42" height="42"/>
+            <button name="tt_2" x="210" y="80" width="42" height="42"/>
+            <button name="tt_3" x="250" y="150" width="42" height="42"/>
+            <button name="tt_4" x="210" y="220" width="42" height="42"/>
+            <button name="tt_5" x="150" y="250" width="42" height="42"/>
+            <button name="tt_6" x="80" y="220" width="42" height="42"/>
+            <button name="tt_7" x="50" y="150" width="42" height="42"/>
+            <button name="tt_8" x="80" y="80" width="42" height="42"/>
+            <button name="tt_center" x="150" y="150" width="60" height="60"/>
+        </container>
+
+        <!-- Wisselknoppen onder -->
+        <container name="wissels" x="0" y="420" width="1024" height="180" flex="row">
+            <button name="w1" x="10" y="10" width="110" height="60"/>
+            <button name="w2" x="130" y="10" width="110" height="60"/>
+            <button name="w3" x="250" y="10" width="110" height="60"/>
+            <button name="w4" x="370" y="10" width="110" height="60"/>
+            <button name="w5" x="490" y="10" width="110" height="60"/>
+        </container>
+    </widgets>
+</lvgl_project>
